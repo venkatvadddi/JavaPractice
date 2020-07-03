@@ -11,10 +11,9 @@ public class program1 {
 									"august", "September", "October", "november", "December" } ;
 			
 			List<String> list = new ArrayList<String>(); 
-			  
-	        // Iterate through the array 
-	        for (String val : input) { 
-	            // Add each element into the list 
+			 
+	        for (String val : input) 
+	        { 	            
 	            list.add(val); 	            
 	        } 	 
 	        System.out.println("Converted list:\n" + list);
