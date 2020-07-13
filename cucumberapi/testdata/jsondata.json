@@ -1,0 +1,1 @@
+{"result":[{"field":"email","message":"Email \"huhu.m@gmail.com\" has already been taken."}],"_meta":{"code":422,"rateLimit":{"limit":30,"reset":2,"remaining":29},"success":false,"message":"Data validation failed. Please check the response body for detailed error messages."}}

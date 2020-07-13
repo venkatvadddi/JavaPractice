@@ -1,0 +1,83 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "user generates authorization token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11121489500,
+              "error_message": "java.lang.NullPointerException\r\n\tat ConfigReader.ReadProperties.getBaseUrl(ReadProperties.java:44)\r\n\tat DataProvider.BaseClass.initialize(BaseClass.java:21)\r\n\tat stepdefinations.backgroundsteps.user_startsexection(backgroundsteps.java:16)\r\n\tat ✽.Given I am an authorised person(features/testone.feature:4)\r\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I am an authorised person",
+            "match": {
+              "location": "backgroundsteps.user_startsexection()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "user is able to add new user",
+        "description": "",
+        "id": "prepare-framework-approach;user-is-able-to-add-new-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user starts exection",
+            "match": {
+              "location": "apisteps.user_startsexection1()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "it should read the configs",
+            "match": {
+              "location": "apisteps.user_startsexection2()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "It should able to access",
+            "match": {
+              "location": "apisteps.user_startsexection3()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "prepare framework approach",
+    "description": "",
+    "id": "prepare-framework-approach",
+    "keyword": "Feature",
+    "uri": "features/testone.feature"
+  }
+]

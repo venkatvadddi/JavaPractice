@@ -1,0 +1,27 @@
+package stepdefinations;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class apisteps {
+	
+	@Given("^user starts exection$")
+	public void user_startsexection1() {
+		
+	}
+	
+	
+	@When("^it should read the configs$")
+	public void user_startsexection2() {
+		
+	}
+	
+	
+	@Then("^It should able to access$")
+	public void user_startsexection3() {
+		
+	}
+	
+
+}
