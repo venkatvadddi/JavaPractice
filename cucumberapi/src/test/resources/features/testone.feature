@@ -1,10 +1,15 @@
 Feature: prepare framework approach
 
 Background: user generates authorization token
-Given I am an authorised person
+	Given user have authorized token
 
 @regression
-Scenario: user is able to add new user
-Given user starts exection
-When it should read the configs
-Then It should able to access
+Scenario: Authorized user can retrieve data using GET method
+	Given I am authorized user
+	When user performs GET operation
+	Then user should get all user information
+
+	Given user perfoms post operation
+	
+	
+	

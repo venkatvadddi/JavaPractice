@@ -1,4 +1,7 @@
-C:\Users\pk\eclipse-workspace\cucumberapi\src\main\java\Utilities\CommonFunctions.java
+C:\Users\pk\eclipse-workspace\cucumberapi\src\main\java\DataProvider\PojoProvider.java
+C:\Users\pk\eclipse-workspace\cucumberapi\src\main\java\Utilities\RandomValueGenerator.java
+C:\Users\pk\eclipse-workspace\cucumberapi\src\main\java\ConfigReader\ConfigReader.java
 C:\Users\pk\eclipse-workspace\cucumberapi\src\main\java\ConfigReader\JsonReader.java
 C:\Users\pk\eclipse-workspace\cucumberapi\src\main\java\ConfigReader\ExcelReader.java
-C:\Users\pk\eclipse-workspace\cucumberapi\src\main\java\ConfigReader\ReadProperties.java
+C:\Users\pk\eclipse-workspace\cucumberapi\src\main\java\DataProvider\ExcelDataProvider.java
+C:\Users\pk\eclipse-workspace\cucumberapi\src\main\java\Utilities\Context.java

@@ -2,18 +2,25 @@ package stepdefinations;
 
 import java.io.IOException;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import ConfigReader.ConfigReader;
+import io.cucumber.java.en.Given;
+import io.restassured.RestAssured;
 
-import DataProvider.BaseClass;
-
-import cucumber.api.java.en.Given;
-
-public class backgroundsteps extends BaseClass{
+public class Backgroundsteps extends ConfigReader{
 	
-	
-	@Given("^I am an authorised person$")
-	public void user_startsexection() throws IOException {
-		initialize();
+	public Backgroundsteps() throws IOException {
+		super();
+	}
+
+	@BeforeTest
+	@Given("^user have authorized token$")
+	public void user_get_authorizedtoken()  {
+				
+			RestAssured.baseURI = getBaseUrl();
+			RestAssured.basePath = getBasepath();
+			RestAssured.authentication = RestAssured.oauth2(getTokenId());	
+		
 	}
 		
 		

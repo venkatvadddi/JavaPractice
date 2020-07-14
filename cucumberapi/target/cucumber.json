@@ -11,64 +11,63 @@
         "steps": [
           {
             "result": {
-              "duration": 11121489500,
-              "error_message": "java.lang.NullPointerException\r\n\tat ConfigReader.ReadProperties.getBaseUrl(ReadProperties.java:44)\r\n\tat DataProvider.BaseClass.initialize(BaseClass.java:21)\r\n\tat stepdefinations.backgroundsteps.user_startsexection(backgroundsteps.java:16)\r\n\tat ✽.Given I am an authorised person(features/testone.feature:4)\r\n",
-              "status": "failed"
+              "duration": 36566000000,
+              "status": "passed"
             },
             "line": 4,
-            "name": "I am an authorised person",
+            "name": "user have authorized token",
             "match": {
-              "location": "backgroundsteps.user_startsexection()"
+              "location": "stepdefinations.Backgroundsteps.user_get_authorizedtoken()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
+        "start_timestamp": "2020-07-14T09:47:28.078Z",
         "line": 7,
-        "name": "user is able to add new user",
+        "name": "Authorized user can retrieve data using GET method",
         "description": "",
-        "id": "prepare-framework-approach;user-is-able-to-add-new-user",
+        "id": "prepare-framework-approach;authorized-user-can-retrieve-data-using-get-method",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 8,
-            "name": "user starts exection",
+            "name": "I am authorized user",
             "match": {
-              "location": "apisteps.user_startsexection1()"
+              "location": "stepdefinations.apisteps.user_authentication()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 9,
-            "name": "it should read the configs",
+            "name": "user performs GET operation",
             "match": {
-              "location": "apisteps.user_startsexection2()"
+              "location": "stepdefinations.apisteps.user_startsexection2()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 10,
-            "name": "It should able to access",
+            "name": "user should get all user information",
             "match": {
-              "location": "apisteps.user_startsexection3()"
+              "location": "stepdefinations.apisteps.user_startsexection3()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 6,
             "name": "@regression"
           }
         ]
@@ -78,6 +77,7 @@
     "description": "",
     "id": "prepare-framework-approach",
     "keyword": "Feature",
-    "uri": "features/testone.feature"
+    "uri": "classpath:features/testone.feature",
+    "tags": []
   }
 ]

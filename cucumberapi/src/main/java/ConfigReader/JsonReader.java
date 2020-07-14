@@ -11,13 +11,17 @@ import org.json.simple.parser.ParseException;
 
 import org.json.JSONObject;
 
-public class JsonReader {
+public class JsonReader extends ConfigReader{	
 	
-	String filePath = System.getProperty("user.dir") + "\\TestData\\users.json";
+	public JsonReader() throws IOException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
+	final String filepath= gettestdata();
 	public void jsonWriter(Object Jsonobject) {
 
-		try (FileWriter file = new FileWriter(filePath)) {
+		try (FileWriter file = new FileWriter(filepath)) {
 			file.append(Jsonobject.toString());
 
 			// file.flush();
@@ -31,7 +35,7 @@ public class JsonReader {
 
 		JSONParser parser = new JSONParser();
 
-		Object obj = parser.parse(new FileReader(filePath));
+		Object obj = parser.parse(new FileReader(filepath));
 		JSONObject jsonObject = (JSONObject) obj;
 		Map jbody = (Map) jsonObject.get("result");
 
