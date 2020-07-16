@@ -1,4 +1,4 @@
-package DataProvider;
+package dataProvider;
 
 public class PojoProvider {
 	

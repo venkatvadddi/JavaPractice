@@ -1,9 +1,10 @@
-package stepdefinations;
+package stepDefinations;
 
 import java.io.IOException;
 
 import org.testng.annotations.BeforeTest;
-import ConfigReader.ConfigReader;
+
+import fileReaders.ConfigReader;
 import io.cucumber.java.en.Given;
 import io.restassured.RestAssured;
 

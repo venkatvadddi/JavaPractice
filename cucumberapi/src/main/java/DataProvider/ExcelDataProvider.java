@@ -1,12 +1,12 @@
-package DataProvider;
+package dataProvider;
 
 import java.io.IOException;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 
-import ConfigReader.ConfigReader;
-import ConfigReader.ExcelReader;
+import fileReaders.ConfigReader;
+import fileReaders.ExcelReader;
 
 public class ExcelDataProvider extends ConfigReader{
 	

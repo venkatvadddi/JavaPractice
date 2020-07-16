@@ -1,4 +1,4 @@
-package stepdefinations;
+package stepDefinations;
 
 
 import io.cucumber.java.en.Given;
@@ -7,9 +7,14 @@ import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
 import static io.restassured.RestAssured.*;
 
+import java.io.IOException;
+
+import apiHelpers.FileManager;
+import apiHelpers.RestClient;
+
 public class apisteps {
 	
-	
+	RestClient rest;
 	
 	@Given("^I am authorized user$")
 	public void user_authentication() {
@@ -17,12 +22,12 @@ public class apisteps {
 		 	contentType(ContentType.JSON).accept(ContentType.JSON);
 		
 	}
-
 	
 	@When("^user performs GET operation$")
-	public void user_startsexection2() {
-		
-		String response = when().get("users").asString();
+	public void user_startsexection2() throws IOException {
+		rest = new RestClient();
+		String response = rest.doGetRequest("users").asString();
+		//String response = when().get("users").asString();
 		System.out.println(response);
 	}
 	
