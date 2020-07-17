@@ -6,16 +6,16 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-public class ConfigReader {
+public class configReader {
 		   
 	 private Properties prop;
-	 String path = System.getProperty("user.dir");
-	 private final String propertyFilePath= "config.properties";
+	 private String path = System.getProperty("user.dir");
+	 private String propertyFilePath= "config.properties";
 	 
 	 
-	 public ConfigReader() throws IOException{
+	 public configReader() throws IOException { 
 		 	
-		 BufferedReader reader;
+		    BufferedReader reader;
 		 	try {
 			 reader = new BufferedReader(new FileReader(propertyFilePath));
 			 prop = new Properties();		 

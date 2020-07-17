@@ -30,7 +30,28 @@
          </configuration>
         </plugin>
    
-        
+        <plugin>
+                <groupId>com.trivago.rta</groupId>
+                <artifactId>cluecumber-report-plugin</artifactId>
+                <version>2.5.0</version>
+                <executions>
+                    <execution>
+                        <id>report</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>reporting</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!-- The only two mandatory properties -->
+                    <sourceJsonReportDirectory>${cucumber.report.json.location}/cucumber.json</sourceJsonReportDirectory>
+                    <generatedHtmlReportDirectory>${generated.report.location}/cluecumber-report</generatedHtmlReportDirectory>
+                    <!-- Optional report page title -->
+                    <customPageTitle>Test Report</customPageTitle>
+                    <expandBeforeAfterHooks>true</expandBeforeAfterHooks>
+                    </configuration>
+            </plugin>
     </plugins>
   </build>
 
@@ -70,7 +91,7 @@
 		    <groupId>org.testng</groupId>
 		    <artifactId>testng</artifactId>
 		    <version>7.0.0</version>
-		    <scope>test</scope>
+		    <scope>compile</scope>
 		</dependency>
 		 
 		 <!-- https://mvnrepository.com/artifact/org.hamcrest/java-hamcrest -->
@@ -169,6 +190,26 @@
 		</dependency>
 
 		
+		
+		        <!-- https://mvnrepository.com/artifact/com.trivago.rta/cluecumber-report-plugin -->
+		        <dependency>
+		            <groupId>com.trivago.rta</groupId>
+		            <artifactId>cluecumber-report-plugin</artifactId>
+		            <version>2.5.0</version>
+		        </dependency>
+			
+				<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+				<dependency>
+				    <groupId>org.apache.logging.log4j</groupId>
+				    <artifactId>log4j-api</artifactId>
+				    <version>2.13.3</version>
+				</dependency>
+				
+				<dependency>
+				    <groupId>org.apache.logging.log4j</groupId>
+				    <artifactId>log4j-core</artifactId>
+				    <version>2.13.3</version>
+				</dependency>
 				
 		
 				

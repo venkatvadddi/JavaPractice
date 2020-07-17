@@ -5,11 +5,11 @@ import java.io.IOException;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 
-import fileReaders.ConfigReader;
 import fileReaders.ExcelReader;
+import fileReaders.configReader;
 
-public class ExcelDataProvider extends ConfigReader{
-	
+public class ExcelDataProvider extends configReader{
+		
 	public ExcelDataProvider() throws IOException {
 		super();		
 	}

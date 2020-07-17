@@ -9,10 +9,9 @@ import static io.restassured.RestAssured.*;
 
 import java.io.IOException;
 
-import apiHelpers.FileManager;
 import apiHelpers.RestClient;
 
-public class apisteps {
+public class stepdefinations {
 	
 	RestClient rest;
 	

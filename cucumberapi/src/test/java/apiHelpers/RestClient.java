@@ -14,13 +14,12 @@ import java.io.IOException;
 import java.util.Map;
 
 
-public class RestClient extends Backgroundsteps{
+public class RestClient {
 	
 			ResponseSpecification responseSpecification;
 			
 			public RestClient() throws IOException {
-				super();
-				// TODO Auto-generated constructor stub
+				//super();				
 			}
 		
 				

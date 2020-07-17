@@ -1,4 +1,4 @@
-Feature: prepare framework approach
+Feature: Verifying GET Method
 
 Background: user generates authorization token
 	Given user have authorized token
@@ -9,7 +9,7 @@ Scenario: Authorized user can retrieve data using GET method
 	When user performs GET operation
 	Then user should get all user information
 
-	Given user perfoms post operation
+	
 	
 	
 	

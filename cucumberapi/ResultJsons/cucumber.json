@@ -11,46 +11,48 @@
         "steps": [
           {
             "result": {
-              "duration": 36566000000,
+              "duration": 307000000,
               "status": "passed"
             },
             "line": 4,
             "name": "user have authorized token",
             "match": {
-              "location": "stepdefinations.Backgroundsteps.user_get_authorizedtoken()"
+              "location": "stepDefinations.Backgroundsteps.user_have_authorized_token()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-07-14T09:47:28.078Z",
+        "start_timestamp": "2020-07-17T06:59:32.180Z",
         "line": 7,
         "name": "Authorized user can retrieve data using GET method",
         "description": "",
-        "id": "prepare-framework-approach;authorized-user-can-retrieve-data-using-get-method",
+        "id": "verifying-get-method;authorized-user-can-retrieve-data-using-get-method",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+              "duration": 115000000,
               "status": "passed"
             },
             "line": 8,
             "name": "I am authorized user",
             "match": {
-              "location": "stepdefinations.apisteps.user_authentication()"
+              "location": "stepDefinations.stepdefinations.user_authentication()"
             },
             "keyword": "Given "
           },
           {
             "result": {
+              "duration": 1609000000,
               "status": "passed"
             },
             "line": 9,
             "name": "user performs GET operation",
             "match": {
-              "location": "stepdefinations.apisteps.user_startsexection2()"
+              "location": "stepDefinations.stepdefinations.user_startsexection2()"
             },
             "keyword": "When "
           },
@@ -61,7 +63,7 @@
             "line": 10,
             "name": "user should get all user information",
             "match": {
-              "location": "stepdefinations.apisteps.user_startsexection3()"
+              "location": "stepDefinations.stepdefinations.user_startsexection3()"
             },
             "keyword": "Then "
           }
@@ -73,9 +75,9 @@
         ]
       }
     ],
-    "name": "prepare framework approach",
+    "name": "Verifying GET Method",
     "description": "",
-    "id": "prepare-framework-approach",
+    "id": "verifying-get-method",
     "keyword": "Feature",
     "uri": "classpath:features/testone.feature",
     "tags": []
