@@ -17,8 +17,8 @@
     <!DOCTYPE html>
     <html lang="en">
     <base href="..">
-    <head title="Test Report - All Tags">
-        <title>Test Report - All Tags</title>
+    <head title=":My Automation Report - All Steps">
+        <title>:My Automation Report - All Steps</title>
 
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -30,7 +30,7 @@ frame-src * data: blob: ;
 style-src * data: blob: 'unsafe-inline';
 font-src * data: blob: 'unsafe-inline';"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Test Report">
+<meta name="description" content=":My Automation Report">
 <meta name="author" content="Cluecumber Report Plugin version 2.5.0">
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="css/datatables.min.css">
@@ -107,7 +107,7 @@ font-src * data: blob: 'unsafe-inline';"/>
           "stacked": true,
           "scaleLabel": {
             "display": true,
-            "labelString": "0 Tags"
+            "labelString": "0 Steps"
           },
           "stepSize": 0.0
         }
@@ -122,7 +122,7 @@ font-src * data: blob: 'unsafe-inline';"/>
           "stacked": true,
           "scaleLabel": {
             "display": true,
-            "labelString": "Number of Scenarios"
+            "labelString": "Number of Usages"
           },
           "stepSize": 0.0
         }
@@ -210,28 +210,28 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a class="nav-link " href="pages/scenario-sequence.html">Scenario Sequence</a>
                     </li>
                     <li class="nav-item">
-                                <a class="nav-link text-white" href="pages/tag-summary.html">All Tags</a>
+                                <a class="nav-link " href="pages/tag-summary.html">All Tags</a>
                     </li>
                     <li class="nav-item">
-                                <a class="nav-link " href="pages/step-summary.html">All Steps</a>
+                                <a class="nav-link text-white" href="pages/step-summary.html">All Steps</a>
                     </li>
                     <li class="nav-item">
                                 <a class="nav-link " href="pages/feature-summary.html">All Features</a>
                     </li>
             </ul>
-            <span class="text-light">2020-07-17 12:12:09</span>
+            <span class="text-light">2020-07-20 09:21:53</span>
         </div>
     </nav>
     <main role="main" class="container">
         <div class="cluecumber-template">
             <div class="pb-2 mt-4 mb-2 border-bottom">
-                    <h3>All Tags</h3>
+                    <h3>All Steps</h3>
             </div>
 
-    <div class="row" id="tag-summary">
+    <div class="row" id="step-summary">
     <div class="col-sm-9  h-auto" data-cluecumber-item="card">
         <div class="card h-100">
-                <div class="card-header">Tag Summary Result Chart</div>
+                <div class="card-header">Step Summary Result Chart</div>
             <div class="card-body">
     <div id="canvas-holder" class="w-100 text-center" style="min-height: 15rem;" data-cluecumber-item="chart">
         <canvas id="chart-area" class="w-100"></canvas>
@@ -241,13 +241,14 @@ font-src * data: blob: 'unsafe-inline';"/>
     </div>
     <div class="col-sm-3  h-auto" data-cluecumber-item="card">
         <div class="card h-100">
-                <div class="card-header">Tag Summary</div>
+                <div class="card-header">Steps Summary</div>
             <div class="card-body">
-            <ul class="list-group list-group-flush" data-cluecumber-item="tag-summary">
-                <li class="list-group-item">0         Tag
+            <ul class="list-group list-group-flush" data-cluecumber-item="step-summary">
+                <li class="list-group-item">
+                    0         Step
  in
                     <br>
-                    0 Tagged         Scenario
+                    0         Scenario
 
                 </li>
                 <li class="list-group-item">
@@ -259,7 +260,7 @@ font-src * data: blob: 'unsafe-inline';"/>
        title="failed"><span style="display:none">failed</span></i>
 
                     <br>
-                    0 skipped     <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
+                    0 skipped    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
        title="skipped"><span style="display:none">skipped</span></i>
 
                 </li>
@@ -269,15 +270,16 @@ font-src * data: blob: 'unsafe-inline';"/>
     </div>
     </div>
 
-    <div class="row" id="available-tags">
+    <div class="row" id="available-steps">
     <div class="col-sm-12  h-auto" data-cluecumber-item="card">
         <div class="card h-100">
-                <div class="card-header">Available Tags</div>
+                <div class="card-header">Available Steps</div>
             <div class="card-body">
-            <table id="tag_summary" class="table table-hover renderAsDataTable" data-cluecumber-item="tag-summary-table">
+            <table id="step_summary" class="table table-hover renderAsDataTable"
+                   data-cluecumber-item="step-summary-table">
                 <thead>
                 <tr>
-                    <th>Tag</th>
+                    <th>Step</th>
                     <th>Total</th>
                     <th>    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
        title="passed"><span style="display:none">passed</span></i>
@@ -288,6 +290,9 @@ font-src * data: blob: 'unsafe-inline';"/>
                     <th>    <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
        title="skipped"><span style="display:none">skipped</span></i>
 </th>
+                    <th>Min Time</th>
+                    <th>Max Time</th>
+                    <th>Ø Time</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -302,7 +307,7 @@ font-src * data: blob: 'unsafe-inline';"/>
 
 <footer class="footer navbar-dark">
     <div class="container-fluid">
-        <span>Cluecumber Report Plugin version 2.5.0 - Report generated on 2020-07-17 12:12:09.</span>
+        <span>Cluecumber Report Plugin version 2.5.0 - Report generated on 2020-07-20 09:21:53.</span>
     </div>
 </footer>    </body>
     </html>

@@ -4,27 +4,27 @@
     "elements": [
       {
         "line": 3,
-        "name": "user generates authorization token",
+        "name": "user passes authorization token",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 307000000,
+              "duration": 554000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "user have authorized token",
+            "name": "user gets authorized token",
             "match": {
-              "location": "stepDefinations.Backgroundsteps.user_have_authorized_token()"
+              "location": "stepDefinations.Backgroundsteps.user_gets_authorized_token()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-07-17T06:59:32.180Z",
+        "start_timestamp": "2020-07-21T02:13:52.148Z",
         "line": 7,
         "name": "Authorized user can retrieve data using GET method",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 115000000,
+              "duration": 126000000,
               "status": "passed"
             },
             "line": 8,
@@ -46,25 +46,20 @@
           },
           {
             "result": {
-              "duration": 1609000000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 9,
             "name": "user performs GET operation",
-            "match": {
-              "location": "stepDefinations.stepdefinations.user_startsexection2()"
-            },
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "user should get all user information",
-            "match": {
-              "location": "stepDefinations.stepdefinations.user_startsexection3()"
-            },
+            "match": {},
             "keyword": "Then "
           }
         ],

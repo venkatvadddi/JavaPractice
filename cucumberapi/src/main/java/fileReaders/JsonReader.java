@@ -11,7 +11,7 @@ import org.json.simple.parser.ParseException;
 
 import org.json.JSONObject;
 
-public class JsonReader extends configReader{	
+public class JsonReader extends ConfigReader{	
 	
 	public JsonReader() throws IOException {
 		super();

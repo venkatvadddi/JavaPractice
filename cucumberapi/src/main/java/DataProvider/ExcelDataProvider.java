@@ -6,9 +6,9 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 
 import fileReaders.ExcelReader;
-import fileReaders.configReader;
+import fileReaders.ConfigReader;
 
-public class ExcelDataProvider extends configReader{
+public class ExcelDataProvider extends ConfigReader{
 		
 	public ExcelDataProvider() throws IOException {
 		super();		

@@ -45,11 +45,14 @@
                 </executions>
                 <configuration>
                     <!-- The only two mandatory properties -->
-                    <sourceJsonReportDirectory>${cucumber.report.json.location}/cucumber.json</sourceJsonReportDirectory>
-                    <generatedHtmlReportDirectory>${generated.report.location}/cluecumber-report</generatedHtmlReportDirectory>
+                    <sourceJsonReportDirectory>cluecumberreports/cucumber.json</sourceJsonReportDirectory>
+                    <generatedHtmlReportDirectory>cluecumberreports/cluecumber-report</generatedHtmlReportDirectory>
                     <!-- Optional report page title -->
-                    <customPageTitle>Test Report</customPageTitle>
+                    <customPageTitle>Automation Report</customPageTitle>
                     <expandBeforeAfterHooks>true</expandBeforeAfterHooks>
+                    <startPage>ALL_FEATURES</startPage>
+                    <customPageTitle>:My Automation Report</customPageTitle>
+                    <customCss>custom/custom.css</customCss>
                     </configuration>
             </plugin>
     </plugins>
@@ -61,7 +64,7 @@
 		    <groupId>io.rest-assured</groupId>
 		    <artifactId>rest-assured</artifactId>
 		    <version>4.2.0</version>
-		    <scope>test</scope>
+		   <!--  <scope>test</scope> -->
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
@@ -179,7 +182,7 @@
 		    <groupId>io.cucumber</groupId>
 		    <artifactId>cucumber-jvm-deps</artifactId>
 		    <version>1.0.6</version>
-		    <scope>provided</scope>
+		   <!--  <scope>provided</scope> -->
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->

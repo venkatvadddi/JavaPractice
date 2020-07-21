@@ -6,8 +6,6 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import stepDefinations.Backgroundsteps;
-
 import static io.restassured.RestAssured.given;
 
 import java.io.IOException;

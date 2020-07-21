@@ -6,14 +6,14 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-public class configReader {
+public class ConfigReader {
 		   
 	 private Properties prop;
 	 private String path = System.getProperty("user.dir");
 	 private String propertyFilePath= "config.properties";
 	 
 	 
-	 public configReader() throws IOException { 
+	 public ConfigReader() throws IOException { 
 		 	
 		    BufferedReader reader;
 		 	try {

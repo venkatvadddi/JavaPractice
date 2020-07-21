@@ -4,19 +4,23 @@ import java.io.IOException;
 
 import org.testng.annotations.BeforeTest;
 
-import fileReaders.configReader;
+import fileReaders.ConfigReader;
 import io.cucumber.java.en.Given;
 import io.restassured.RestAssured;
+import io.restassured.config.LogConfig;
+import utilities.logger;
 
-public class Backgroundsteps extends configReader{
+public class Backgroundsteps extends ConfigReader{
 	
+		
 	public Backgroundsteps() throws IOException {
 		//super();
 	}
 
 	@BeforeTest
-	@Given("^user have authorized token$")
-	public void user_have_authorized_token() {
+	@Given("^user gets authorized token$")
+	public void user_gets_authorized_token() {
+		logger.log().info("reading baseURI & access token");
 		RestAssured.baseURI =getBaseUrl();
 		RestAssured.basePath = getBasepath();
 		RestAssured.authentication = RestAssured.oauth2(getTokenId());	

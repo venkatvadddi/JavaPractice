@@ -5,6 +5,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
+import utilities.Context;
 import static io.restassured.RestAssured.*;
 
 import java.io.IOException;
@@ -14,30 +17,30 @@ import apiHelpers.RestClient;
 public class stepdefinations {
 	
 	RestClient rest;
+	Response response;
+	
 	
 	@Given("^I am authorized user$")
-	public void user_authentication() {
+	public void user_authentication() {		
 		 given().
 		 	contentType(ContentType.JSON).accept(ContentType.JSON);
 		
 	}
 	
-	@When("^user performs GET operation$")
-	public void user_startsexection2() throws IOException {
+	@When("^I performs GET operation for \"([^\"]*)\"$")
+	public void I_perform_Getfor(String val) throws IOException {
 		rest = new RestClient();
-		String response = rest.doGetRequest("users").asString();
-		//String response = when().get("users").asString();
-		System.out.println(response);
+		response = rest.doGetRequest(val);		
 	}
 	
-	@Then("^user should get all user information$")
-	public void user_startsexection3() {		
+	@Then("^I should get all user information$")
+	public void I_get_userinfo() {	
 			
+		response.then().statusCode(200);
+		String response = when().get("users").asString();
+		System.out.println(response);
+		
 	}
 	
-	@Given("user perfoms post operation")
-	public void user_perfoms_post_operation() {
 	
-	}
-
 }
